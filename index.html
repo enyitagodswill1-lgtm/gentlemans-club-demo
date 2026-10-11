@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gentleman's Club | Premium Grooming</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="announcement">
+        THE ART OF A BETTER CUT — YOUR STYLE, YOUR STANDARD
+    </div>
+
+    <header class="header">
+        <a href="#home" class="logo">
+            <span class="logo-icon">G<span>.</span></span>
+            <span>THE GENTLEMAN'S<small>CLUB · GROOMING STUDIO</small></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+
+        <nav id="nav">
+            <a href="#about">Our Story</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">The Studio</a>
+            <a href="#booking" class="nav-button">Book a Visit ↗</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <p class="eyebrow">✦ PREMIUM GROOMING EXPERIENCE</p>
+
+                <h1>Made sharp.<br><em>Made for you.</em></h1>
+
+                <p class="hero-description">
+                    More than a haircut. A considered experience built around
+                    precision, confidence, and the details that make you, you.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#booking" class="button gold-button">Reserve Your Chair ↗</a>
+                    <a href="#services" class="text-button">Explore Services ↓</a>
+                </div>
+
+                <div class="hero-bottom">
+                    <span>PRECISION GROOMING</span>
+                    <span>PREMIUM EXPERIENCE</span>
+                </div>
+            </div>
+
+            <div class="hero-label">EST. FOR THE WELL-GROOMED</div>
+        </section>
+
+        <section class="trust-strip">
+            <div><strong>01</strong><span>Skilled Barbers</span></div>
+            <div><strong>02</strong><span>Premium Products</span></div>
+            <div><strong>03</strong><span>Clean Environment</span></div>
+            <div><strong>04</strong><span>Sharp Results</span></div>
+        </section>
+
+        <section class="about section" id="about">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1000&q=85"
+                    alt="Professional barbershop interior"
+                >
+                <div class="image-caption">
+                    <span>THE STANDARD</span>
+                    <h3>Good taste<br>is in the details.</h3>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <p class="eyebrow">WELCOME TO YOUR NEW ROUTINE</p>
+                <h2>Classic craft.<br><em>Modern character.</em></h2>
+
+                <p>
+                    We believe a great cut should feel as good as it looks.
+                    Our studio combines skilled hands, thoughtful details,
+                    and a relaxed atmosphere for an experience worth returning to.
+                </p>
+
+                <p>
+                    Come in for the clean fade. Stay for the confidence.
+                </p>
+
+                <a href="#booking" class="text-button dark-text">
+                    Experience the difference ↗
+                </a>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">THE SERVICE MENU</p>
+                    <h2>Good grooming.<br><em>No shortcuts.</em></h2>
+                </div>
+
+                <p>
+                    Thoughtful service, clean technique, and a finish
+                    that feels unmistakably yours.
+                </p>
+            </div>
+
+            <div class="service-grid">
+                <article class="service-card">
+                    <span class="service-number">01 / CUT</span>
+                    <div class="service-icon">✂</div>
+                    <h3>The Signature Cut</h3>
+                    <p>A tailored haircut finished with precision and intention.</p>
+
+                    <div class="price-row">
+                        <span>45 MINUTES</span>
+                        <strong>₦5,000</strong>
+                    </div>
+
+                    <button class="service-book" data-service="The Signature Cut">
+                        Book This Service <span>↗</span>
+                    </button>
+                </article>
+
+                <article class="service-card featured">
+                    <span class="service-number">02 / STYLE</span>
+                    <div class="service-icon">✦</div>
+                    <h3>Cut & Styling</h3>
+                    <p>Precision shaping with a polished, personal finish.</p>
+
+                    <div class="price-row">
+                        <span>60 MINUTES</span>
+                        <strong>₦8,000</strong>
+                    </div>
+
+                    <button class="service-book" data-service="Cut & Styling">
+                        Book This Service <span>↗</span>
+                    </button>
+                </article>
+
+                <article class="service-card">
+                    <span class="service-number">03 / BEARD</span>
+                    <div class="service-icon">♢</div>
+                    <h3>Beard Sculpt</h3>
+                    <p>Defined lines, balanced shape, and a clean finish.</p>
+
+                    <div class="price-row">
+                        <span>30 MINUTES</span>
+                        <strong>₦3,500</strong>
+                    </div>
+
+                    <button class="service-book" data-service="Beard Sculpt">
+                        Book This Service <span>↗</span>
+                    </button>
+                </article>
+            </div>
+
+            <p class="price-note">
+                Demo prices — customize these for your client's business.
+            </p>
+        </section>
+
+        <section class="statement">
+            <p class="eyebrow">YOUR CHAIR IS WAITING</p>
+            <h2>Leave the ordinary<br>at the <em>door.</em></h2>
+            <a href="#booking" class="button gold-button">Make It Your Moment ↗</a>
+        </section>
+
+        <section class="gallery section" id="gallery">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">INSIDE THE STUDIO</p>
+                    <h2>Where details<br><em>make the difference.</em></h2>
+                </div>
+
+                <p>A little craft. A little character. A space made for you.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <img
+                    src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=85"
+                    alt="Professional barber at work"
+                    loading="lazy"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85"
+                    alt="Barbershop interior"
+                    loading="lazy"
+                >
+
+                <div class="gallery-card">
+                    <span>THE GENTLEMAN'S CLUB</span>
+                    <h3>Sharp looks.<br>Better days.</h3>
+                    <a href="#booking">Come Through ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking" id="booking">
+            <div class="booking-intro">
+                <p class="eyebrow">YOUR NEXT GOOD DECISION</p>
+                <h2>Let's get you<br><em>looking sharp.</em></h2>
+
+                <p>
+                    Choose your service and tell us when works for you.
+                    We'll help you take it from there.
+                </p>
+
+                <div class="contact-detail">
+                    <span>VISIT THE STUDIO</span>
+                    <strong>Add your business address</strong>
+                </div>
+
+                <div class="contact-detail">
+                    <span>CALL OR WHATSAPP</span>
+                    <strong>Add your business phone number</strong>
+                </div>
+            </div>
+
+            <form class="booking-form" id="bookingForm">
+                <div class="form-heading">
+                    <span>01 — RESERVATION</span>
+                    <h3>Request an appointment</h3>
+                </div>
+
+                <label for="customerName">Your Name</label>
+                <input id="customerName" name="name" type="text"
+                       placeholder="Enter your full name" required>
+
+                <label for="customerPhone">Phone Number</label>
+                <input id="customerPhone" name="phone" type="tel"
+                       placeholder="e.g. 08012345678" required>
+
+                <label for="serviceSelect">Choose a Service</label>
+                <select id="serviceSelect" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="The Signature Cut">The Signature Cut</option>
+                    <option value="Cut & Styling">Cut & Styling</option>
+                    <option value="Beard Sculpt">Beard Sculpt</option>
+                </select>
+
+                <div class="form-row">
+                    <div>
+                        <label for="bookingDate">Preferred Date</label>
+                        <input id="bookingDate" name="date" type="date" required>
+                    </div>
+
+                    <div>
+                        <label for="bookingTime">Preferred Time</label>
+                        <select id="bookingTime" name="time" required>
+                            <option value="">Select time</option>
+                            <option>9:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>1:00 PM</option>
+                            <option>2:00 PM</option>
+                            <option>3:00 PM</option>
+                            <option>4:00 PM</option>
+                            <option>5:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <label for="notes">Additional Notes (Optional)</label>
+                <textarea id="notes" name="notes" rows="3"
+                          placeholder="Any special requests?"></textarea>
+
+                <button class="button gold-button submit-button" type="submit">
+                    Request Booking ↗
+                </button>
+
+                <p class="form-note">
+                    This is a demo website. Set your WhatsApp number in script.js
+                    to receive booking requests.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#home" class="logo footer-logo">
+            <span class="logo-icon">G<span>.</span></span>
+            <span>THE GENTLEMAN'S<small>CLUB · GROOMING STUDIO</small></span>
+        </a>
+
+        <p>Good grooming is a good feeling.</p>
+
+        <div class="footer-bottom">
+            <span>© <span id="year"></span> THE GENTLEMAN'S CLUB</span>
+            <a href="#home">BACK TO TOP ↑</a>
+            <span>BUILT WITH INTENTION</span>
+        </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
